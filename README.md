@@ -1,33 +1,45 @@
-[![GoDoc](https://godoc.org/github.com/wyy-go/go-cli-template?status.svg)](https://godoc.org/github.com/wyy-go/go-cli-template)
-[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/github.com/wyy-go/go-cli-template?tab=doc)
-[![codecov](https://codecov.io/gh/wyy-go/go-cli-template/branch/main/graph/badge.svg)](https://codecov.io/gh/wyy-go/go-cli-template)
-[![Tests](https://github.com/wyy-go/go-cli-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/wyy-go/go-cli-template/actions/workflows/ci.yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wyy-go/go-cli-template)](https://goreportcard.com/report/github.com/wyy-go/go-cli-template)
-[![Licence](https://img.shields.io/github/license/wyy-go/go-cli-template)](https://raw.githubusercontent.com/wyy-go/go-cli-template/main/LICENSE)
-[![Tag](https://img.shields.io/github/v/tag/wyy-go/go-cli-template)](https://github.com/wyy-go/go-cli-template/tags)
+# limiter
+[![GoDoc](https://godoc.org/github.com/wyy-go/wlimiter?status.svg)](https://godoc.org/github.com/wyy-go/wlimiter)
+[![Go.Dev reference](https://img.shields.io/badge/go.dev-reference-blue?logo=go&logoColor=white)](https://pkg.go.dev/github.com/wyy-go/wlimiter?tab=doc)
+[![codecov](https://codecov.io/gh/wyy-go/wlimiter/branch/main/graph/badge.svg)](https://codecov.io/gh/wyy-go/wlimiter)
+[![Tests](https://github.com/wyy-go/wlimiter/actions/workflows/ci.yml/badge.svg)](https://github.com/wyy-go/wlimiter/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wyy-go/wlimiter)](https://goreportcard.com/report/github.com/wyy-go/wlimiter)
+[![Licence](https://img.shields.io/github/license/wyy-go/wlimiter)](https://raw.githubusercontent.com/wyy-go/wlimiter/main/LICENSE)
+[![Tag](https://img.shields.io/github/v/tag/wyy-go/wlimiter)](https://github.com/wyy-go/wlimiter/tags)
 
-# go-cli-template
-This is template that help you to quick implement some CLI using Go.
+## Features
 
-This repository is contains following.
+- [limit](./limit/README.md)
+- [limit_verified](./limit_verified/README.md)
+- [verified](./verified/README.md)
+- [ratelimit](./ratelimit/README.md)
 
-- minimal CLI implementation using [spf13/cobra](https://github.com/spf13/cobra)
-- CI/CD
-  - [golangci-lint](https://golangci-lint.run/usage/linters/)
-  - go test
-  - goreleaser
-  - dependabot for github-actions and Go
-  - CodeQL Analysis (Go)
+## Usage
 
-## How to use
-1. fork this repository
-2. replace `wyy-go` to your user name using `sed`(or others)
-3. run `make init`
+### Installation
 
-## Author
-wyy-go
+Use go get.
+
+```bash
+    go get github.com/wyy-go/wlimiter
+```
+
+Then import the package into your own code.
+
+```bash
+    import "github.com/wyy-go/wlimiter"
+```
+
+### Example
+
+[embedmd]:# (_examples/main.go go)
+```go
+
+```
 
 ## References
+- [limiter](https://github.com/things-go/limiter)
 
-- [go-cli-template](https://github.com/skanehira/go-cli-template)
+## License
 
+This project is under MIT License. See the [LICENSE](LICENSE) file for the full license text.
